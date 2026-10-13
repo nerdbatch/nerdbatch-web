@@ -1,0 +1,3 @@
+- Bunny videos mount at most one iframe per section (hero: active slide only; portfolio: only after a click) and are driven via `src/lib/bunnyPlayer.ts` (Player.js ready/play/pause/error, volume 0–100) — keeps first load light.
+- `src/lib/mediaCoordinator.ts` enforces one playing Bunny video page-wide — prevents overlapping sound.
+- Process animations are MP4/WebM with posters via `ProcessAnimation`, sources attached only near the viewport — GIFs were ~46 MB.
